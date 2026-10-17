@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meet the team behind Cumbre Trails.">
+  <title>About us | Cumbre Trails</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html"><i class="fa-solid fa-mountain-sun" aria-hidden="true"></i>Cumbre Trails</a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu"><i class="fa-solid fa-bars"></i></label>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="about.html" aria-current="page">About us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>About us</h1>
+        <p>A small team of mountain lovers who want to share the trails we grew up on.</p>
+      </div>
+    </section>
+
+    <!-- Full-width banner: different files for different widths with srcset + sizes="100vw" -->
+    <figure class="about-banner">
+      <picture>
+        <source type="image/webp"
+                srcset="images/snow-600.webp 600w, images/snow-1200.webp 1200w, images/snow-1800.webp 1800w"
+                sizes="100vw">
+        <img src="images/snow-1200.jpg"
+            srcset="images/snow-600.jpg 600w, images/snow-1200.jpg 1200w, images/snow-1800.jpg 1800w"
+            sizes="100vw"
+            width="1200" height="800"
+            alt="Snow-covered mountain peaks under a blue sky">
+      </picture>
+    </figure>
+
+    <section class="section" aria-labelledby="story-title">
+      <div class="container">
+        <div class="two-col">
+          <div>
+            <h2 id="story-title">Our story</h2>
+            <p>Cumbre Trails started in 2018 when three friends began taking their colleagues on weekend hikes. Word spread quickly, and soon strangers were asking to join.</p>
+            <p>Today we organise more than 300 guided hikes a year, but we still keep our groups small so that every hiker gets personal attention.</p>
+          </div>
+          <div>
+            <h2>Our mission</h2>
+            <p>We believe the mountains are for everyone. Our goal is to help people of all fitness levels discover nature safely and responsibly.</p>
+            <p>We follow Leave No Trace principles on every tour and donate 5% of our profits to local trail maintenance.</p>
+          </div>
+        </div>
+
+        <ul class="stats">
+          <li class="stat"><strong>8</strong> years of experience</li>
+          <li class="stat"><strong>12k+</strong> happy hikers</li>
+          <li class="stat"><strong>40</strong> different routes</li>
+          <li class="stat"><strong>4.9</strong> average rating</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="quote-section" aria-label="Founder quote">
+      <div class="container">
+        <blockquote class="quote">
+          <p>The best view always comes after the hardest climb — and it is even better when you share it.</p>
+          <footer>— Lucía, co-founder</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="team-title">
+      <div class="container">
+        <h2 class="section-title" id="team-title">Meet the guides</h2>
+        <ul class="team-list">
+          <li class="team-member">
+            <div class="avatar" aria-hidden="true">LG</div>
+            <h3>Lucía García</h3>
+            <p>Co-founder &amp; lead guide</p>
+          </li>
+          <li class="team-member">
+            <div class="avatar" aria-hidden="true">DM</div>
+            <h3>David Martín</h3>
+            <p>Mountain guide &amp; first aid</p>
+          </li>
+          <li class="team-member">
+            <div class="avatar" aria-hidden="true">AR</div>
+            <h3>Ana Ruiz</h3>
+            <p>Nature &amp; wildlife expert</p>
+          </li>
+          <li class="team-member">
+            <div class="avatar" aria-hidden="true">JL</div>
+            <h3>Javier López</h3>
+            <p>Night &amp; camping specialist</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <ul class="social-links">
+        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+      </ul>
+      <p>Copyright &copy; 2026 Cumbre Trails</p>
+      <p>Photos: Wikimedia Commons (public domain / CC0).</p>
+    </div>
+  </footer>
+</body>
+</html>

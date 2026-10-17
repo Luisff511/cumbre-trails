@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover the guided hiking tours offered by Cumbre Trails.">
+  <title>Tours | Cumbre Trails</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/tours.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html"><i class="fa-solid fa-mountain-sun" aria-hidden="true"></i>Cumbre Trails</a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu"><i class="fa-solid fa-bars"></i></label>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tours.html" aria-current="page">Tours</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <h1>Our tours</h1>
+        <p>Four signature routes, from relaxed forest walks to full-day summit climbs. All tours include a certified guide, insurance and snacks.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Tour list">
+      <div class="container">
+        <div class="tour-list">
+        <article class="tour">
+          <div class="tour-media">
+            <picture>
+              <source type="image/webp"
+                      srcset="images/sunrise-wide-600.webp 600w, images/sunrise-wide-1200.webp 1200w"
+                      sizes="(max-width: 768px) calc(100vw - 48px), 500px">
+              <img src="images/sunrise-wide-600.jpg"
+                  srcset="images/sunrise-wide-600.jpg 600w, images/sunrise-wide-1200.jpg 1200w"
+                  sizes="(max-width: 768px) calc(100vw - 48px), 500px"
+                  width="600" height="400" loading="lazy"
+                  alt="Sunrise lighting up snowy mountain peaks">
+            </picture>
+          </div>
+          <div class="tour-body">
+            <h2>Sunrise Ridge</h2>
+            <ul class="tour-meta">
+              <li><i class="fa-solid fa-clock" aria-hidden="true"></i>5 hours</li>
+              <li><i class="fa-solid fa-signal" aria-hidden="true"></i>Medium</li>
+              <li><i class="fa-solid fa-users" aria-hidden="true"></i>Max. 10 people</li>
+            </ul>
+            <p>Start in the dark with head torches and reach the ridge just as the sun comes up. Breakfast with a view is included.</p>
+            <div class="tour-footer">
+              <p class="price">€45 <small>/ person</small></p>
+              <a class="btn" href="contact.html">Book now</a>
+            </div>
+          </div>
+        </article>
+        <article class="tour">
+          <div class="tour-media">
+            <picture>
+              <source type="image/webp"
+                      srcset="images/lake-wide-600.webp 600w, images/lake-wide-1200.webp 1200w"
+                      sizes="(max-width: 768px) calc(100vw - 48px), 500px">
+              <img src="images/lake-wide-600.jpg"
+                  srcset="images/lake-wide-600.jpg 600w, images/lake-wide-1200.jpg 1200w"
+                  sizes="(max-width: 768px) calc(100vw - 48px), 500px"
+                  width="600" height="400" loading="lazy"
+                  alt="Alpine lake below a red mountain">
+            </picture>
+          </div>
+          <div class="tour-body">
+            <h2>Hidden Lakes Loop</h2>
+            <ul class="tour-meta">
+              <li><i class="fa-solid fa-clock" aria-hidden="true"></i>7 hours</li>
+              <li><i class="fa-solid fa-signal" aria-hidden="true"></i>Medium–hard</li>
+              <li><i class="fa-solid fa-users" aria-hidden="true"></i>Max. 8 people</li>
+            </ul>
+            <p>A full-day loop past three glacial lakes. Bring your swimsuit if you are brave enough for the cold water.</p>
+            <div class="tour-footer">
+              <p class="price">€60 <small>/ person</small></p>
+              <a class="btn" href="contact.html">Book now</a>
+            </div>
+          </div>
+        </article>
+        <article class="tour">
+          <div class="tour-media">
+            <picture>
+              <source type="image/webp"
+                      srcset="images/forest-wide-600.webp 600w, images/forest-wide-1200.webp 1200w"
+                      sizes="(max-width: 768px) calc(100vw - 48px), 500px">
+              <img src="images/forest-wide-600.jpg"
+                  srcset="images/forest-wide-600.jpg 600w, images/forest-wide-1200.jpg 1200w"
+                  sizes="(max-width: 768px) calc(100vw - 48px), 500px"
+                  width="600" height="400" loading="lazy"
+                  alt="Hiking trail through a green forest">
+            </picture>
+          </div>
+          <div class="tour-body">
+            <h2>Forest Discovery</h2>
+            <ul class="tour-meta">
+              <li><i class="fa-solid fa-clock" aria-hidden="true"></i>3 hours</li>
+              <li><i class="fa-solid fa-signal" aria-hidden="true"></i>Easy</li>
+              <li><i class="fa-solid fa-child" aria-hidden="true"></i>Family friendly</li>
+            </ul>
+            <p>A gentle walk through old forests where our guides explain the plants, birds and history of the valley.</p>
+            <div class="tour-footer">
+              <p class="price">€25 <small>/ person</small></p>
+              <a class="btn" href="contact.html">Book now</a>
+            </div>
+          </div>
+        </article>
+        <article class="tour">
+          <div class="tour-media">
+            <picture>
+              <source type="image/webp"
+                      srcset="images/night-wide-600.webp 600w, images/night-wide-1200.webp 1200w"
+                      sizes="(max-width: 768px) calc(100vw - 48px), 500px">
+              <img src="images/night-wide-600.jpg"
+                  srcset="images/night-wide-600.jpg 600w, images/night-wide-1200.jpg 1200w"
+                  sizes="(max-width: 768px) calc(100vw - 48px), 500px"
+                  width="600" height="400" loading="lazy"
+                  alt="Lit tent under the Milky Way at night">
+            </picture>
+          </div>
+          <div class="tour-body">
+            <h2>Starlight Camp</h2>
+            <ul class="tour-meta">
+              <li><i class="fa-solid fa-clock" aria-hidden="true"></i>2 days</li>
+              <li><i class="fa-solid fa-signal" aria-hidden="true"></i>Medium</li>
+              <li><i class="fa-solid fa-campground" aria-hidden="true"></i>Tents included</li>
+            </ul>
+            <p>Hike to a high-altitude camp, cook dinner outdoors and fall asleep under thousands of stars. All camping gear is provided.</p>
+            <div class="tour-footer">
+              <p class="price">€140 <small>/ person</small></p>
+              <a class="btn" href="contact.html">Book now</a>
+            </div>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <h2 id="cta-title">Not sure which tour to pick?</h2>
+            <p>Send us a message and we will recommend the right route for you.</p>
+          </div>
+          <a class="btn btn-outline" href="contact.html">Ask us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <ul class="social-links">
+        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+      </ul>
+      <p>Copyright &copy; 2026 Cumbre Trails</p>
+      <p>Sunrise photo: Mark Byzewski, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>. Other photos: Wikimedia Commons (public domain / CC0).</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,333 @@
+/* Cumbre Trails - about page (about.html)
+   Only Flexbox (no Grid) and no JavaScript */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap");
+
+/* Client colors */
+:root {
+  --dark: #1f2937;
+  --light: #f9faf8;
+  --grey: #e5e7eb;
+  --blue: #3882f6;
+}
+
+/* ---------- Base ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--dark);
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 64px 0;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 32px;
+  background: var(--blue);
+  color: white;
+  font-weight: 700;
+  border: 2px solid var(--blue);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-outline {
+  border-color: white;
+}
+
+/* ---------- Header ---------- */
+header {
+  background: var(--dark);
+  position: relative;
+}
+
+.nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--light);
+}
+
+.logo i {
+  color: var(--blue);
+  margin-right: 8px;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 32px;
+}
+
+.main-nav a {
+  font-size: 18px;
+  color: var(--grey);
+}
+
+.main-nav a:hover,
+.main-nav a[aria-current="page"] {
+  color: var(--blue);
+}
+
+/* Burger menu: hidden checkbox + label (only visible on small screens) */
+.nav-toggle,
+.nav-toggle-label {
+  display: none;
+}
+
+.nav-toggle-label {
+  font-size: 28px;
+  color: var(--light);
+  cursor: pointer;
+}
+
+/* ---------- Page hero ---------- */
+.page-hero {
+  background: var(--dark);
+  color: var(--grey);
+  text-align: center;
+  padding: 56px 0;
+}
+
+.page-hero h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--light);
+}
+
+.page-hero p {
+  font-size: 18px;
+}
+
+/* ---------- Quote ---------- */
+.quote-section {
+  background: var(--grey);
+  padding: 96px 0;
+}
+
+.quote {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.quote p {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.25;
+}
+
+.quote footer {
+  text-align: right;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* ---------- About page ---------- */
+.about-banner img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+}
+
+.two-col {
+  display: flex;
+  gap: 48px;
+}
+
+.two-col > div {
+  flex: 1;
+}
+
+.two-col h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.two-col p {
+  margin-bottom: 12px;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.stat {
+  flex: 1 1 140px;
+  text-align: center;
+  padding: 24px;
+  background: var(--grey);
+  border-radius: 8px;
+}
+
+.stat strong {
+  display: block;
+  font-size: 36px;
+  color: var(--blue);
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+
+.team-member {
+  width: 200px;
+  text-align: center;
+}
+
+.avatar {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto 12px;
+  border-radius: 50%;
+  border: 4px solid var(--blue);
+  background: var(--dark);
+  color: var(--light);
+  font-size: 40px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: var(--dark);
+  color: var(--grey);
+  padding: 32px 0;
+  font-size: 14px;
+}
+
+.site-footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-nav ul,
+.social-links {
+  display: flex;
+  gap: 24px;
+}
+
+.social-links a {
+  font-size: 20px;
+}
+
+/* ---------- Tablet and mobile (768px and below) ---------- */
+@media (max-width: 768px) {
+  /* Show the burger icon */
+  .nav-toggle-label {
+    display: block;
+  }
+
+  /* Hide the menu and place it under the header */
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    background: var(--dark);
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 0 24px 16px;
+  }
+
+  .main-nav a {
+    display: block;
+    padding: 12px 0;
+  }
+
+  /* When the checkbox is checked, show the menu */
+  .nav-toggle:checked ~ .main-nav {
+    display: block;
+  }
+
+  .two-col {
+    flex-direction: column;
+  }
+
+  .page-hero h1 {
+    font-size: 40px;
+  }
+
+  .quote p {
+    font-size: 28px;
+  }
+
+  .about-banner img {
+    height: 260px;
+  }
+}
+
+/* ---------- Small mobile (480px and below) ---------- */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .page-hero h1 {
+    font-size: 34px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .quote p {
+    font-size: 22px;
+  }
+}

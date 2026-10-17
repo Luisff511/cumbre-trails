@@ -1,0 +1,289 @@
+/* Cumbre Trails - contact page (contact.html)
+   Only Flexbox (no Grid) and no JavaScript */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap");
+
+/* Client colors */
+:root {
+  --dark: #1f2937;
+  --light: #f9faf8;
+  --grey: #e5e7eb;
+  --blue: #3882f6;
+}
+
+/* ---------- Base ---------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--dark);
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: 64px 0;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 32px;
+  background: var(--blue);
+  color: white;
+  font-weight: 700;
+  border: 2px solid var(--blue);
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-outline {
+  border-color: white;
+}
+
+/* ---------- Header ---------- */
+header {
+  background: var(--dark);
+  position: relative;
+}
+
+.nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--light);
+}
+
+.logo i {
+  color: var(--blue);
+  margin-right: 8px;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 32px;
+}
+
+.main-nav a {
+  font-size: 18px;
+  color: var(--grey);
+}
+
+.main-nav a:hover,
+.main-nav a[aria-current="page"] {
+  color: var(--blue);
+}
+
+/* Burger menu: hidden checkbox + label (only visible on small screens) */
+.nav-toggle,
+.nav-toggle-label {
+  display: none;
+}
+
+.nav-toggle-label {
+  font-size: 28px;
+  color: var(--light);
+  cursor: pointer;
+}
+
+/* ---------- Page hero ---------- */
+.page-hero {
+  background: var(--dark);
+  color: var(--grey);
+  text-align: center;
+  padding: 56px 0;
+}
+
+.page-hero h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--light);
+}
+
+.page-hero p {
+  font-size: 18px;
+}
+
+/* ---------- Contact page ---------- */
+.contact-wrap {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.contact-info {
+  flex: 1;
+  background: var(--dark);
+  color: var(--grey);
+  border-radius: 8px;
+  padding: 40px;
+}
+
+.contact-info h2 {
+  color: var(--light);
+  margin-bottom: 16px;
+}
+
+.contact-info li {
+  margin-bottom: 12px;
+}
+
+.contact-info i {
+  color: var(--blue);
+  width: 24px;
+}
+
+.contact-form {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  font: inherit;
+  padding: 10px;
+  border: 2px solid var(--grey);
+  border-radius: 8px;
+}
+
+.contact-form .btn {
+  align-self: flex-start;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: var(--dark);
+  color: var(--grey);
+  padding: 32px 0;
+  font-size: 14px;
+}
+
+.site-footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-nav ul,
+.social-links {
+  display: flex;
+  gap: 24px;
+}
+
+.social-links a {
+  font-size: 20px;
+}
+
+/* ---------- Tablet and mobile (768px and below) ---------- */
+@media (max-width: 768px) {
+  /* Show the burger icon */
+  .nav-toggle-label {
+    display: block;
+  }
+
+  /* Hide the menu and place it under the header */
+  .main-nav {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    width: 100%;
+    background: var(--dark);
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 0;
+    padding: 0 24px 16px;
+  }
+
+  .main-nav a {
+    display: block;
+    padding: 12px 0;
+  }
+
+  /* When the checkbox is checked, show the menu */
+  .nav-toggle:checked ~ .main-nav {
+    display: block;
+  }
+
+  .contact-wrap {
+    flex-direction: column;
+  }
+
+  .page-hero h1 {
+    font-size: 40px;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+}
+
+/* ---------- Small mobile (480px and below) ---------- */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .page-hero h1 {
+    font-size: 34px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cumbre Trails — guided hiking and mountain adventures for every level.">
+  <title>Cumbre Trails | Guided Mountain Hikes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="logo" href="index.html"><i class="fa-solid fa-mountain-sun" aria-hidden="true"></i>Cumbre Trails</a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Open menu"><i class="fa-solid fa-bars"></i></label>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-text">
+          <h1>Find your next summit</h1>
+          <p>Small-group guided hikes through the most beautiful mountain trails. Certified guides, all the gear you need and memories that last.</p>
+          <a class="btn" href="contact.html">Sign up</a>
+        </div>
+
+        <div class="hero-media">
+          <!--
+            <picture> = art direction: a square crop on phones,
+            a wide 16:10 crop on larger screens. WebP first, JPG fallback.
+          -->
+          <picture>
+            <source media="(max-width: 768px)" type="image/webp"
+                    srcset="images/hero-mobile-480.webp 480w, images/hero-mobile-800.webp 800w"
+                    sizes="calc(100vw - 48px)">
+            <source media="(max-width: 768px)"
+                    srcset="images/hero-mobile-480.jpg 480w, images/hero-mobile-800.jpg 800w"
+                    sizes="calc(100vw - 48px)">
+            <source type="image/webp"
+                    srcset="images/hero-480.webp 480w, images/hero-800.webp 800w, images/hero-1200.webp 1200w"
+                    sizes="(max-width: 1100px) 45vw, 500px">
+            <img src="images/hero-800.jpg"
+                srcset="images/hero-480.jpg 480w, images/hero-800.jpg 800w, images/hero-1200.jpg 1200w"
+                sizes="(max-width: 1100px) 45vw, 500px"
+                width="800" height="500"
+                alt="A group of hikers walking along a mountain trail">
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFORMATION -->
+    <section class="section" aria-labelledby="info-title">
+      <div class="container">
+        <h2 class="section-title" id="info-title">Why hike with us?</h2>
+
+        <ul class="info-list">
+          <li class="info-item">
+            <!-- srcset with x-descriptors: the card has a fixed max size, so the
+                browser only needs to pick by screen pixel density (1x / 2x). -->
+            <img src="images/sunrise-300.jpg"
+                srcset="images/sunrise-300.jpg 1x, images/sunrise-600.jpg 2x"
+                width="300" height="300" loading="lazy"
+                alt="Sunrise lighting up snowy mountain peaks">
+            <h3>Sunrise starts</h3>
+            <p>We hit the trail early to catch the best light and the quietest paths.</p>
+          </li>
+          <li class="info-item">
+            <img src="images/lake-300.jpg"
+                srcset="images/lake-300.jpg 1x, images/lake-600.jpg 2x"
+                width="300" height="300" loading="lazy"
+                alt="Alpine lake below a red mountain">
+            <h3>Hidden lakes</h3>
+            <p>Routes chosen by local guides who know every secret spot.</p>
+          </li>
+          <li class="info-item">
+            <img src="images/forest-300.jpg"
+                srcset="images/forest-300.jpg 1x, images/forest-600.jpg 2x"
+                width="300" height="300" loading="lazy"
+                alt="Hiking trail through a green forest">
+            <h3>Every level</h3>
+            <p>From easy forest walks to challenging full-day ascents.</p>
+          </li>
+          <li class="info-item">
+            <img src="images/night-300.jpg"
+                srcset="images/night-300.jpg 1x, images/night-600.jpg 2x"
+                width="300" height="300" loading="lazy"
+                alt="Lit tent under the Milky Way at night">
+            <h3>Starry nights</h3>
+            <p>Overnight camps far away from the city lights.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="quote-section" aria-label="Customer testimonial">
+      <div class="container">
+        <blockquote class="quote">
+          <p>Before Cumbre Trails I had never walked more than a few kilometres. Three months later I was standing on a summit at sunrise. The guides made every step feel possible.</p>
+          <footer>— Marta, Barcelona</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION -->
+    <section class="cta-section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-box">
+          <div>
+            <h2 id="cta-title">Ready for your first adventure?</h2>
+            <p>Sign up today and get 10% off your first guided hike.</p>
+          </div>
+          <a class="btn btn-outline" href="contact.html">Sign up</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tours.html">Tours</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <ul class="social-links">
+        <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+      </ul>
+      <p>Copyright &copy; 2026 Cumbre Trails</p>
+      <p>Sunrise photo: Mark Byzewski, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>. Other photos: Wikimedia Commons (public domain / CC0).</p>
+    </div>
+  </footer>
+</body>
+</html>
